@@ -1,0 +1,119 @@
+body{
+    background-color: grey;
+}
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4%;
+}
+/* Navigation Bar: Logo and image */
+#logo{
+    margin: 10px 20px;
+}
+#logo img{
+    height: 70px;
+    width: auto;
+    margin: 10px 10px;
+} 
+/* Navigation Bar: List Styling */
+#navbar{
+    position: relative;;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: pink;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+  color: black;
+  background-color: white;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 540px;
+    width: 650px;
+
+}
+.btn{
+    color: white;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 15px;
+}
+.btn:hover{
+    color: black;
+    background-color: yellow;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 17px;
+}
+/* Contact Section */
+/* .container{
+    border: 2px solid burlywood;
+    padding: 20px;
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+} */
+#contact{
+    height: auto;
+    width: 260px;
+    border: 2px solid red;
+    padding: 17px;
+    margin: 20px;
+}
+#about{
+    height: auto;
+    width: 200px;
+    border: 2px solid red;
+    padding: 17px;
+    margin: 20px;
+}
+#about img{
+    height: auto;
+    width: 150px;
+    margin: 10px 10px;
+}
+footer p{
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
